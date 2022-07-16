@@ -1,0 +1,64 @@
+.container, .input {
+    display: flex;
+    justify-content: center;
+}
+.container__header {
+    font-size: 60px;
+    background: radial-gradient(circle, rgba(106,109,117,1) 0%, rgba(130,97,63,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.btn-submit {
+    background-color: rgba(130,97,63,0.7);
+    padding: 20px;
+    border: none;
+}
+.input-field {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    outline: none;
+}
+.input-field:hover {
+    border: 1px solid rgba(130,97,63,0.7);
+}
+body {
+    background-image: url(media/coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(130,97,63);
+}
+.list-item-added {
+    background-color: rgba(106,109,117,0.8);
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    width: 50%;
+    color:rgb(255,255,255);
+    border-bottom: 1px solid rgb(255,255,255);
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-item-removed {
+    background-color:rgb(0,128,0);
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 1s ease-out; 
+}
+@media all and (max-width: 800px) {
+    .container__header {
+        font-size: 35px;
+    }
+}
+@media all and (max-width: 500px) {
+    .container__header {
+        font-size: 25px;
+    }
+}
